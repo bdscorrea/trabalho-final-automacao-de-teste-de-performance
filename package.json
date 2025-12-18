@@ -1,0 +1,37 @@
+{
+  "name": "sw-tutorial",
+  "version": "1.0.0",
+  "description": "E-commerce REST API with JWT authentication and checkout functionality",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliodelimas/sw-tutorial.git"
+  },
+  "keywords": ["ecommerce", "api", "express", "jwt", "rest"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/juliodelimas/sw-tutorial/issues"
+  },
+  "homepage": "https://github.com/juliodelimas/sw-tutorial#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "swagger-ui-express": "^5.0.0",
+    "yamljs": "^0.3.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3",
+    "chai": "^4.1.0",
+    "mochawesome": "^7.1.3"
+  }
+}

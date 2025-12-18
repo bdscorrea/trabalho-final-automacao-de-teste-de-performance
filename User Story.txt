@@ -1,0 +1,20 @@
+Title: Checkout with Valid Payment Methods
+
+As a registered user,
+I want to complete a checkout using an accepted payment method,
+so that I can purchase products from the store.
+
+Description
+
+- The system must allow authenticated users to perform checkout for one or more products.
+- Payment can be made using either cash or credit card.
+- Depending on the payment method, specific business rules apply.
+
+Rules
+
+- Payment Methods: Only cash and credit card are accepted
+- Cash Discount: Cash payments receive a 10% discount
+- Credit Card: No discounts are applied
+- Authentication: Only authenticated users can perform checkout
+- Product Validation: Products must exist and have sufficient stock
+

@@ -1,0 +1,26 @@
+ [
+    {
+      "id": 5,
+      "name": "Teste Laptop",
+      "description": "High-performance laptop for work and gaming",
+      "price": 999.99,
+      "stock": 50,
+      "createdAt": "2025-12-15T19:44:10.861Z"
+    },
+    {
+      "id": 6,
+      "name": "Teste Smartphone",
+      "description": "Latest model smartphone with advanced features",
+      "price": 699.99,
+      "stock": 30,
+      "createdAt": "2025-12-15T19:44:10.861Z"
+    },
+    {
+      "id": 7,
+      "name": "Teste Headphones",
+      "description": "Wireless noise-canceling headphones",
+      "price": 199.99,
+      "stock": 99,
+      "createdAt": "2025-12-15T19:44:10.861Z"
+    }
+  ]
