@@ -40,8 +40,8 @@ export default function () {
       headers: { 'Content-Type': 'application/json' }
     });
     check(res, {
-      'register status is 201': (r) => r.status === 201,
-      'register is success': (r) => r.json('success') === true,
+      'registro status is 201': (r) => r.status === 201,
+      'registro is success': (r) => r.json('success') === true,
     });
   });
 
@@ -84,8 +84,8 @@ export default function () {
     });
 
     check(res, {
-      "status é 201": (r) => r.status === 201,
-      "produto criado": (r) => r.json("success") === true,
+      "cadastro de produto status é 201": (r) => r.status === 201,
+      "cadastro de produto is success": (r) => r.json("success") === true,
     });
   });
 
