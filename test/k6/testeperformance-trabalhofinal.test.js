@@ -53,7 +53,7 @@ export default function () {
  
   group('Checkout', function () {
     let res = http.post(`${getBaseUrl()}/checkout`, JSON.stringify({
-      items: [{ productId: 2, quantity: 2 }],
+      items: [{ productId: 2, quantity: 1 }],
       paymentMethod: 'cash'
     }), {
       headers: {
