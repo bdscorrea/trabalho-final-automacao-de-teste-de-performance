@@ -6,7 +6,6 @@ import { login } from './helpers/auth.js';
 import { SharedArray } from 'k6/data';
 
 export let options = {
-  vus: 10,
   stages: [
     { duration: '10s', target: 5 },
     { duration: '20s', target: 10 },
