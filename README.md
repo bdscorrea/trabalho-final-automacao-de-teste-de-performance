@@ -421,7 +421,13 @@ const products = new SharedArray('products', function () {
     });
 
 #### Conceitos entregados: Thresholds
-O código abaixo está armazenado no arquivo testeperformance-trabalhofinal.test.js , e os Thresholds definidos para http_req_duration, checks e checkout_duration.
+O código abaixo está armazenado no arquivo testeperformance-trabalhofinal.test.js , e tem como objetivo estabelecer critérios de aceitação (Thresholds) para o teste de performance.
+
+http_req_duration: define que 95% das requisições HTTP devem apresentar tempo de resposta inferior a 2000 ms, assegurando uma performance aceitável da API como um todo.
+
+checks: estabelece que pelo menos 95% das validações funcionais executadas durante o teste devem ser bem-sucedidas, garantindo estabilidade e confiabilidade das respostas.
+
+checkout_duration: métrica personalizada que determina que 95% das operações de checkout devem ser concluídas em menos de 1500 ms, focando no desempenho de um fluxo crítico da aplicação.
 
 export let options = {
   thresholds: {
@@ -432,7 +438,7 @@ export let options = {
 };
 
 #### Conceitos entregados: Checks
-O código abaixo está armazenado no arquivo testeperformance-trabalhofinal.test.js e as validações em cada grupo (status HTTP e sucesso da resposta).
+O código abaixo está armazenado no arquivo testeperformance-trabalhofinal.test.js e as validações são feitas em cada grupo (status HTTP e sucesso da resposta).
 
   check(res, {
       'checkout status is 200': (r) => r.status === 200,
